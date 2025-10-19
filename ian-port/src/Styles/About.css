@@ -1,0 +1,163 @@
+.aboutContainer {
+    position: relative;
+    font-family: "Roboto Mono", serif;
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
+
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.aboutContainer:hover {
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.location {
+   font-size: 20px;
+   margin-bottom: 10px;
+   color: rgb(155, 154, 154);
+}
+
+.topRow{
+    font-family: "Roboto", serif;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.iconContainer {
+    display: flex;
+    gap: 14px;
+}
+
+.iconContainer a {
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 10px;
+    display: flex;
+    padding: 6px;
+
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.iconContainer a:hover {
+    transform: scale(1.1);
+}
+
+.bottomRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    margin-top: 23px;
+}
+
+.aboutButton {
+    position: relative;
+    font-family: "Roboto Mono", serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid rgb(82, 82, 82);
+    padding: 10px;
+    border-radius: 10px;
+
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.aboutButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Tech Stack */
+
+.TechStack {
+    width: 40%;
+    margin: auto;
+    font-family: "Roboto Mono", serif;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+}
+
+.TechStackList {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 30px;
+    font-size: 1rem;
+}
+
+.TechStackList li {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.TechStackList li:hover {
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.TechStackHeader {
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+}
+
+/* Experience  */
+
+.Experience {
+    width: 40%;
+    margin: 40px auto;
+    font-family: "Roboto Mono", serif;
+    color: white;
+}
+
+.ExperienceHeader {
+    font-family: "Roboto", serif;
+    font-size: 2.6rem;
+}
+
+.ExperienceList {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ExperienceList li {       
+    padding: 20px; 
+    margin-bottom: 20px;
+    width: 80%;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.Experience ul li {
+    list-style: none;
+}
+
+.ExperienceDate {   
+    color: rgb(155, 154, 154);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.ExperienceInfo {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-bottom: 0px;
+}

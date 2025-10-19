@@ -1,0 +1,32 @@
+.logo {
+    font-family: "Roboto Mono", serif;
+    font-size: 1.6rem;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+nav {
+    font-family: "Roboto Mono", serif;
+    color: white;
+
+    width: 60%;
+    margin: 20px auto;
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+nav li:hover, .logo:hover {
+    transform: scale(1.1);
+}
+
