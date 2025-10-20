@@ -1,202 +1,299 @@
 .aboutContainer {
-    position: relative;
-    font-family: "Roboto Mono", serif;
-    width: 40%;
-    margin: 40px auto;
-    padding: 20px;
-    color: rgb(226, 226, 226);
-
-    border: 1px solid rgb(82, 82, 82);
-    border-radius: 10px;
-    flex-wrap: wrap;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  font-family: "Roboto Mono", serif;
+  width: 40%;
+  margin: 40px auto;
+  padding: 20px;
+  color: rgb(226, 226, 226);
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;      
 }
+
 .aboutContainer:hover {
-    transform: scale(1.1);
-    cursor: default;
+  transform: scale(1.05);
+  cursor: default;
 }
 
-.location {
-   font-size: 20px;
-   margin-bottom: 10px;
-   color: rgb(155, 154, 154);
-}
-
-.topRow{
-    font-family: "Roboto", serif;
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+/* TOP SECTION */
+.topRow {
+  font-family: "Roboto", serif;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: transparent;
 }
 
 .iconContainer {
-    display: flex;
-    gap: 14px;
+  display: flex;
+  gap: 14px;
+  background: transparent;
 }
 
 .iconContainer a {
-    border: 1px solid rgb(82, 82, 82);
-    border-radius: 10px;
-    display: flex;
-    padding: 6px;
-
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 10px;
+  display: flex;
+  padding: 6px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .iconContainer a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+.locationContainer {
+  margin-top: 10px;
+}
+
+.location {
+  font-size: 20px;
+  color: rgb(155, 154, 154);
+}
+
+/* BOTTOM ROW */
 .bottomRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 20px;
 }
 
 .info {
-    margin-top: 23px;
+  margin-top: 10px;
+  font-size: 1rem;
 }
 
 .aboutButton {
-    position: relative;
-    font-family: "Roboto Mono", serif;
-    color: rgb(226, 226, 226);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    border: 1px solid rgb(82, 82, 82);
-    padding: 10px;
-    border-radius: 10px;
-
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  font-family: "Roboto Mono", serif;
+  color: rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
 }
 
 .aboutButton:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-/* Tech Stack */
-
+/* TECH STACK SECTION */
 .TechStack {
-    width: 40%;
-    margin: auto;
-    font-family: "Roboto Mono", serif;
-    justify-content: space-between;
-    color: rgb(226, 226, 226);
-    display: flex;
-}
-
-.TechStackList {
-    display: flex;
-    list-style: none;
-    color: rgb(226, 226, 226);
-    gap: 30px;
-    font-size: 1rem;
-}
-
-.TechStackList li {
-    display: flex;
-    gap: 2px;
-    align-items: center;
-
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.TechStackList li:hover {
-    transform: scale(1.1);
-    cursor: default;
+  width: 40%;
+  margin: 60px auto;
+  font-family: "Roboto Mono", serif;
+  justify-content: space-between;
+  color: rgb(226, 226, 226);
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .TechStackHeader {
-    font-family: "Roboto", serif;
-    font-size: 1.5rem;
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+  flex-basis: 100%;
+  margin-bottom: 10px;
 }
 
-/* Experience  */
+.TechStackList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color: rgb(226, 226, 226);
+  gap: 20px;
+  font-size: 1rem;
+}
 
+.TechStackList li {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.TechStackList li:hover {
+  transform: scale(1.1);
+  cursor: default;
+}
+
+
+/* EXPERIENCE SECTION */
 .Experience {
-    width: 40%;
-    margin: 40px auto;
-    font-family: "Roboto Mono", serif;
-    color: rgb(226, 226, 226);
-}
-
-.ExperienceType {
-    font-size: 1.5rem;
-    background: transparent;
-    font-family: "Roboto", serif;
-    margin-top: -4px;
+  width: 40%;
+  margin: 60px auto;
+  font-family: "Roboto Mono", serif;
+  color: rgb(226, 226, 226);
 }
 
 .ExperienceHeader {
-    font-family: "Roboto", serif;
-    font-size: 2.6rem;
+  font-family: "Roboto", serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .ExperienceList {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-    position: relative;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
 }
 
 .ExperienceItemWrapper {
-    display: flex; 
-    gap: 30px; 
-    align-items: center;
-    position: relative;
-    width: 100%;
-    margin-left: 92px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin-left: 92px;
 }
+
 .ExperienceArrow {
-    flex-shrink: 0;
-    align-self: center;
-    color: rgb(226, 226, 226);
+  flex-shrink: 0;
+  align-self: center;
+  color: rgb(226, 226, 226);
 }
 
 .ExperienceList li {
-    padding: 20px;
-    width: 80%;
-    border: 1px solid rgb(82, 82, 82);
-    border-radius: 10px;
-    background-color: rgba(1, 4, 9); 
+  padding: 20px;
+  width: 80%;
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 10px;
+  background-color: rgba(1, 4, 9);
 }
 
 .ExperienceItemWrapper:last-child .ExperienceItem {
-    padding: 20px;
-    width: 80%;
-    border: 1px solid rgb(82, 82, 82);
-    border-radius: 10px;
-    background: transparent;
+  background: transparent;
 }
 
-.Experience ul li {
-    list-style: none;
-}
-
-.ExperienceDate {   
-    color: rgb(155, 154, 154);
-    font-size: 0.7rem;
-    margin-bottom: 10px;
-    background: transparent;
+.ExperienceDate {
+  color: rgb(155, 154, 154);
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  background: transparent;
 }
 
 .ExperienceInfo {
-    font-size: 0.75rem;
-    text-align: justify;
-    margin-bottom: 0px;
-    background: transparent;
+  font-size: 0.9rem;
+  text-align: justify;
+  background: transparent;
+}
+
+.ExperienceType {
+    background-color: transparent;
 }
 
 .ExperienceItem {
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ExperienceItem:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .aboutContainer,
+  .TechStack,
+  .Experience {
+    width: 60%;
+  }
+
+  .topRow {
+    font-size: 1.4rem;
+  }
+
+  .ExperienceHeader {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .aboutContainer,
+  .TechStack,
+  .Experience {
+    width: 80%;
+    margin: 30px auto;
+    padding: 16px;
+  }
+
+  .topRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8em;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .TechStack {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .TechStackList {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .ExperienceItemWrapper {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .ExperienceList li {
+    width: 100%;
+  }
+
+  .ExperienceHeader {
+    text-align: center;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .aboutContainer,
+  .TechStack,
+  .Experience {
+    width: 90%;
+  }
+
+  .topRow h1 {
+    font-size: 1.5rem;
+  }
+
+  .TechStackHeader {
+    font-size: 1.2rem;
+  }
+
+  .ExperienceHeader {
+    font-size: 1.8rem;
+  }
+
+  .ExperienceInfo {
+    font-size: 0.8rem;
+  }
 }

@@ -1,72 +1,149 @@
 .ContactPage {
-    width: 40%;
-    color: rgb(226, 226, 226);
-    font-family: "Roboto Mono", serif;
-    margin: 40px auto;
+  width: 40%;
+  color: rgb(226, 226, 226);
+  font-family: "Roboto Mono", serif;
+  margin: 40px auto;
 }
 
 .ContactMe {
-    border: 1px solid gray;
-    padding: 20px;
-    border-radius: 10px;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 20px;
+  border-radius: 10px;
+  background: transparent;
 }
 
 .ContactPageHeader {
-    font-family: "Roboto", serif;
-    font-size: 2.2rem;
+  font-family: "Roboto", serif;
+  font-size: 2.2rem;
+  background: transparent;
 }
 
-p {
-    color: rgb(155, 154, 154);
-    font-size: 1.1rem;
+.ContactPage p {
+  color: rgb(155, 154, 154);
+  font-size: 1.1rem;
+  background: transparent;
 }
 
 .ContactIconsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 80px;
-    margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin: 40px auto;
+  flex-wrap: wrap;
 }
 
 .ContactIndiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+}
+
+.ContactIndiv:hover {
+  transform: scale(1.05);
 }
 
 .ContactTop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 90px;
+  background: transparent;
 }
 
 .ContactIconLink {
-    color: rgb(226, 226, 226);
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
 }
 
-
 .ContactIconLink:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .ContactLabel {
-    margin-top: 10px;
+  margin-top: 10px;
+  background: transparent;
 }
 
 .ContactUserContainer {
-    margin-top: -10px;
-    margin-bottom: -30px;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  background: transparent;
 }
 
 .ContactUser {
-    font-size: 0.8rem;
-    color: rgb(155, 154, 154);
+  font-size: 0.8rem;
+  color: rgb(155, 154, 154);
+  background: transparent;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .ContactPage {
+    width: 60%;
+  }
+
+  .ContactIconsContainer {
+    gap: 50px;
+  }
+
+  .ContactPageHeader {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ContactPage {
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+  }
+
+  .ContactIconsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .ContactPageHeader {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .ContactPage p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .ContactUserContainer {
+    margin-top: -5px;
+    margin-bottom: -15px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .ContactPage {
+    width: 90%;
+  }
+
+  .ContactPageHeader {
+    font-size: 1.6rem;
+  }
+
+  .ContactPage p {
+    font-size: 0.95rem;
+  }
+
+  .ContactUser {
+    font-size: 0.75rem;
+  }
 }
