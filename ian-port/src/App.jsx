@@ -10,15 +10,15 @@ import ContactPage from './Pages/ContactPage'
 const App = () => {
   return (
     <div>
-      <Router>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="AboutPage" element={<AboutPage />} />
-        <Route path="WorksPage" element={<WorksPage />} />
-        <Route path="Projectspage" element={<ProjectsPage />} />
-        <Route path="ContactPage" element={<ContactPage />} />
-      </Routes>
+      <Router basename="/ian-port">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/aboutPage" element={<AboutPage />} />
+          <Route path="/worksPage" element={<WorksPage />} />
+          <Route path="/projectsPage" element={<ProjectsPage />} />
+          <Route path="/contactPage" element={<ContactPage />} />
+        </Routes>
       </Router>
     </div>
   )
