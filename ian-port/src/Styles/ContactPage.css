@@ -1,0 +1,72 @@
+.ContactPage {
+    width: 40%;
+    color: rgb(226, 226, 226);
+    font-family: "Roboto Mono", serif;
+    margin: 40px auto;
+}
+
+.ContactMe {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ContactPageHeader {
+    font-family: "Roboto", serif;
+    font-size: 2.2rem;
+}
+
+p {
+    color: rgb(155, 154, 154);
+    font-size: 1.1rem;
+}
+
+.ContactIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin: 40px auto;
+}
+
+.ContactIndiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 120px;
+}
+
+.ContactTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90px;
+}
+
+.ContactIconLink {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.ContactIconLink:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.ContactLabel {
+    margin-top: 10px;
+}
+
+.ContactUserContainer {
+    margin-top: -10px;
+    margin-bottom: -30px;
+}
+
+.ContactUser {
+    font-size: 0.8rem;
+    color: rgb(155, 154, 154);
+}

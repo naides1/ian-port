@@ -1,7 +1,7 @@
 
 nav {
     font-family: "Roboto Mono", serif;
-    color: white;
+    color: rgb(226, 226, 226);
     background-color: rgba(1, 4, 9); 
     width: 100%;
     display: flex;

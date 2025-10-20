@@ -1,0 +1,16 @@
+.AboutPage {
+    width: 40%;
+    margin: 40px auto;
+    font-family: "Roboto Mono", serif;
+    color: rgb(226, 226, 226);
+}
+
+.AboutPageHeader {
+    font-family: "Roboto", serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.AboutPageInfo {
+    text-align: justify;
+}

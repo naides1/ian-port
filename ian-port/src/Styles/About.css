@@ -4,7 +4,7 @@
     width: 40%;
     margin: 40px auto;
     padding: 20px;
-    color: white;
+    color: rgb(226, 226, 226);
 
     border: 1px solid rgb(82, 82, 82);
     border-radius: 10px;
@@ -62,7 +62,7 @@
 .aboutButton {
     position: relative;
     font-family: "Roboto Mono", serif;
-    color: white;
+    color: rgb(226, 226, 226);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -86,14 +86,14 @@
     margin: auto;
     font-family: "Roboto Mono", serif;
     justify-content: space-between;
-    color: white;
+    color: rgb(226, 226, 226);
     display: flex;
 }
 
 .TechStackList {
     display: flex;
     list-style: none;
-    color: white;
+    color: rgb(226, 226, 226);
     gap: 30px;
     font-size: 1rem;
 }
@@ -122,7 +122,7 @@
     width: 40%;
     margin: 40px auto;
     font-family: "Roboto Mono", serif;
-    color: white;
+    color: rgb(226, 226, 226);
 }
 
 .ExperienceType {
@@ -156,7 +156,7 @@
 .ExperienceArrow {
     flex-shrink: 0;
     align-self: center;
-    color: white;
+    color: rgb(226, 226, 226);
 }
 
 .ExperienceList li {
