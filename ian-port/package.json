@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://naides1.github.io/ian-port/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,6 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://naides1.github.io/ian-port/",
   "dependencies": {
     "lucide-react": "^0.546.0",
     "react": "^19.1.1",
