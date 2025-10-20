@@ -3,9 +3,9 @@ import React from 'react'
 import { FaHtml5, FaReact, FaCss3Alt  } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiVite } from "react-icons/si";
+import { Mail, Github, Linkedin, Instagram, CornerDownRight, ArrowRight } from "lucide-react";
 
 import '../Styles/About.css'
-import { Mail, Github, Linkedin, Instagram, CircleChevronRight, MapPinHouse } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -48,7 +48,7 @@ const About = () => {
           <p className='info'>Frontend Developer, UI/UX Designer</p>
           <button className='aboutButton' onClick={() => navigate("/aboutPage")}>
             <span>Learn More</span>
-            <CircleChevronRight size={22} />
+            <ArrowRight size={22} />
           </button>
         </div>
       </div>
@@ -67,16 +67,32 @@ const About = () => {
       <div className='Experience'>
         <h1 className='ExperienceHeader'>Experience</h1>
         <ul className='ExperienceList'>
-          <li>
+          <div className='ExperienceItemWrapper'>
+          <CornerDownRight size={28} className='ExperienceArrow'/>
+          <li className='ExperienceItem'>
             <h2 className='ExperienceType'>Frontend Developer Intern</h2>
             <h3 className='ExperienceDate'>September, 2025 - November, 2025</h3>
-            <p className='ExperienceInfo'>Worked as a frontend developer for several pages for an already built website. These include designing UI/UX and actual development using React JS.</p>
+            <p className='ExperienceInfo'>Worked as a frontend developer on several pages for an already built website. Includes designing UI/UX through Figma, and development using React JS.</p>
           </li>
-          <li>
+          </div>
+
+          <div className='ExperienceItemWrapper'>
+          <CornerDownRight size={28} className='ExperienceArrow'/>
+          <li className='ExperienceItem'>
             <h2 className='ExperienceType'>UI/UX Designer Intern</h2>
             <h3 className='ExperienceDate'>January, 2025 - March 2025</h3>
-            <p className='ExperienceInfo'>Worked as a UI Designer for a website from scratch using Figma.</p>
+            <p className='ExperienceInfo'>Designed the UI/UX of multiple websites from scratch using Figma.</p>
           </li>
+          </div>
+
+          <div className='ExperienceItemWrapper'>
+          <CornerDownRight size={28} className='ExperienceArrow'/>
+          <li className='ExperienceItem'>
+            <h2 className='ExperienceType'>Mapua University</h2>
+            <h3 className='ExperienceDate'>BS Information Technology, Specializing in Cybersecurity</h3>
+            <p className='ExperienceInfo'>Conducted Thesis and Practicum here.</p>
+          </li>
+          </div>
         </ul>
         
       </div></>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
+    <div className='navContainer'>
     <h1 className='logo'><Link to="/"> Ian Canlas </Link></h1>
       <ul>
         <li><Link to="/aboutPage">About</Link></li>
@@ -12,6 +13,7 @@ const Navbar = () => {
         <li><Link to="/projectsPage">Projects</Link></li>
         <li><Link to="/contactPage">Contact</Link></li>
       </ul>
+    </div>
     </nav>
   )
 }

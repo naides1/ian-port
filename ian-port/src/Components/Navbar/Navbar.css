@@ -1,32 +1,58 @@
-.logo {
-    font-family: "Roboto Mono", serif;
-    font-size: 1.6rem;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);  
-}
 
 nav {
     font-family: "Roboto Mono", serif;
     color: white;
+    background-color: rgba(1, 4, 9); 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(155, 154, 154);
+}
 
+.navContainer {
     width: 60%;
-    margin: 20px auto;
-    padding: 12px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     flex-wrap: wrap;
-    
+    background: transparent; 
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    background: rgba(1, 4, 9); 
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0px 20px;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);  
+    margin: 0;
+    padding: 0;
+    background: rgba(1, 4, 9); 
 }
 
-nav li:hover, .logo:hover {
+nav ul li a {
+    display: block;
+    padding: 0 20px; 
+    color: inherit;
+    text-decoration: none;
+    background: rgba(1, 4, 9); 
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav ul li a:hover, .logo a:hover {
     transform: scale(1.1);
 }
-

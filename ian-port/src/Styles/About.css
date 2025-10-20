@@ -2,7 +2,7 @@
     position: relative;
     font-family: "Roboto Mono", serif;
     width: 40%;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 20px;
     color: white;
 
@@ -125,6 +125,13 @@
     color: white;
 }
 
+.ExperienceType {
+    font-size: 1.5rem;
+    background: transparent;
+    font-family: "Roboto", serif;
+    margin-top: -4px;
+}
+
 .ExperienceHeader {
     font-family: "Roboto", serif;
     font-size: 2.6rem;
@@ -134,16 +141,38 @@
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    gap: 20px; 
+    position: relative;
 }
 
-.ExperienceList li {       
-    padding: 20px; 
-    margin-bottom: 20px;
-    width: 80%;
+.ExperienceItemWrapper {
+    display: flex; 
+    gap: 30px; 
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-left: 92px;
+}
+.ExperienceArrow {
+    flex-shrink: 0;
+    align-self: center;
+    color: white;
+}
 
-    border: 1px solid gray;
+.ExperienceList li {
+    padding: 20px;
+    width: 80%;
+    border: 1px solid rgb(82, 82, 82);
     border-radius: 10px;
+    background-color: rgba(1, 4, 9); 
+}
+
+.ExperienceItemWrapper:last-child .ExperienceItem {
+    padding: 20px;
+    width: 80%;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 10px;
+    background: transparent;
 }
 
 .Experience ul li {
@@ -152,12 +181,22 @@
 
 .ExperienceDate {   
     color: rgb(155, 154, 154);
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     margin-bottom: 10px;
+    background: transparent;
 }
 
 .ExperienceInfo {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     text-align: justify;
     margin-bottom: 0px;
+    background: transparent;
+}
+
+.ExperienceItem {
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ExperienceItem:hover {
+    transform: scale(1.03);
 }
